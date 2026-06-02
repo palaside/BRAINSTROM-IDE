@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "nodeCheck": "passed",
+  "orchestratorRun": {
+    "exitCode": 0,
+    "script": "orchestrator/orchestrator.js"
+  },
+  "runtimeReport": {
+    "exists": true,
+    "parseable": true,
+    "status": "passed",
+    "moduleCount": 5,
+    "summary": {
+      "projectName": "Context Foundation - 05ALL12",
+      "projectTypeMode": "candidate-only",
+      "finalProjectType": "pending-analysis"
+    }
+  },
+  "prohibitedArtifacts": {
+    "src": false,
+    "packageJson": false,
+    "build": false,
+    "dist": false
+  },
+  "coreOutputsUnchanged": true,
+  "gitOperations": false
+}

@@ -1,0 +1,158 @@
+{
+  "schemaVersion": "pccos.core5-runtime.v1",
+  "generatedAt": "2026-06-01T19:22:13.744058+00:00",
+  "name": "PCCOS Core 5 Runtime Pack",
+  "sourceFoundation": "Context Foundation - 05ALL12",
+  "status": "foundation-ready",
+  "modules": [
+    {
+      "id": "01",
+      "folder": "01_doctrine_policy_runtime",
+      "name": "Doctrine & Policy Runtime",
+      "code": "CORE5-01",
+      "role": "กฎแม่ของระบบและนโยบายความปลอดภัย",
+      "purpose": "กำหนดหลักคิด กติกา ข้อห้าม และลำดับการทำงานของ AI ก่อนเข้าสู่การอ่าน วิเคราะห์ หรือแก้ไฟล์",
+      "inputs": [
+        "USER.md",
+        "AGENTS.md",
+        "START_HERE_TH.md",
+        "context.md",
+        "agent.md"
+      ],
+      "outputs": [
+        "DOCTRINE_REPORT.md",
+        "policy-runtime.json",
+        "approval-rules.json"
+      ],
+      "functions": [
+        "load_core_rules",
+        "resolve_policy_conflicts",
+        "classify_risk_policy",
+        "produce_runtime_guardrails"
+      ]
+    },
+    {
+      "id": "02",
+      "folder": "02_intake_runtime",
+      "name": "Intake Runtime",
+      "code": "CORE5-02",
+      "role": "ด่านรับและจำแนกข้อมูลเข้า",
+      "purpose": "รับ README.md, arena-project.json, ZIP, Folder, Raw Chat, Prompt แล้วแยกเป็น idea, requirement, decision, code, evidence",
+      "inputs": [
+        "README.md",
+        "context.md",
+        "agent.md",
+        "arena-project.json",
+        "package.json",
+        "raw-chat.txt",
+        "prompt.md",
+        "folder tree"
+      ],
+      "outputs": [
+        "INTAKE_REPORT.md",
+        "classified-input.json",
+        "source-map.json",
+        "raw-input-index.json"
+      ],
+      "functions": [
+        "detect_source_type",
+        "extract_project_signals",
+        "classify_content_units",
+        "build_source_map",
+        "emit_intake_report"
+      ]
+    },
+    {
+      "id": "03",
+      "folder": "03_project_genome_engine",
+      "name": "Project Genome Engine",
+      "code": "CORE5-03",
+      "role": "สร้าง DNA ของโปรเจกต์",
+      "purpose": "สรุปชื่อ ประเภท candidate, stack, readiness, risk, next action และตัวตนของโปรเจกต์จากข้อมูลที่ Intake ส่งมา",
+      "inputs": [
+        "classified-input.json",
+        "source-map.json",
+        "README.md",
+        "context.md",
+        "package.json",
+        "arena-project.json"
+      ],
+      "outputs": [
+        "PROJECT_GENOME.md",
+        "project-genome.json",
+        "project-type-analysis.md"
+      ],
+      "functions": [
+        "infer_project_identity",
+        "infer_stack_signals",
+        "score_project_type_candidates",
+        "summarize_readiness",
+        "recommend_next_action"
+      ]
+    },
+    {
+      "id": "04",
+      "folder": "04_reality_scan_engine",
+      "name": "Reality Scan Engine",
+      "code": "CORE5-04",
+      "role": "ตรวจสถานะจริงของไฟล์และ runtime",
+      "purpose": "ตรวจว่าไฟล์มีจริงไหม ว่างไหม manifest ตรงกับ disk ไหม มีไฟล์สำคัญครบไหม และพร้อมรันแค่ไหน",
+      "inputs": [
+        "file tree",
+        "arena-project.json",
+        "package.json",
+        "PROJECT_GENOME.md",
+        "project-genome.json"
+      ],
+      "outputs": [
+        "REALITY_SCAN.md",
+        "reality-scan.json",
+        "file-health-report.json"
+      ],
+      "functions": [
+        "scan_file_tree",
+        "compare_manifest_to_disk",
+        "detect_empty_or_placeholder_files",
+        "detect_runtime_readiness",
+        "emit_reality_scan"
+      ]
+    },
+    {
+      "id": "05",
+      "folder": "05_missing_intelligence_engine",
+      "name": "Missing Intelligence Engine",
+      "code": "CORE5-05",
+      "role": "จัดลำดับสิ่งที่ขาดและแผนเติมงาน",
+      "purpose": "แปลง missing files / missing capabilities ให้เป็น backlog ตาม priority เช่น P0 blocker, P1 core, P2 quality, P3 production, P4 future",
+      "inputs": [
+        "REALITY_SCAN.md",
+        "reality-scan.json",
+        "project-genome.json",
+        "project-type-candidates.md",
+        "PROJECT_STANDARD.md"
+      ],
+      "outputs": [
+        "MISSING_INTELLIGENCE.md",
+        "missing-intelligence.json",
+        "NEXT_BATCH_PLAN.md"
+      ],
+      "functions": [
+        "classify_missing_items",
+        "map_missing_to_capabilities",
+        "assign_priority",
+        "propose_next_batch",
+        "emit_missing_intelligence"
+      ]
+    }
+  ],
+  "executionOrder": [
+    "01_doctrine_policy_runtime",
+    "02_intake_runtime",
+    "03_project_genome_engine",
+    "04_reality_scan_engine",
+    "05_missing_intelligence_engine"
+  ],
+  "nextOutput": "NEXT_BATCH_PLAN.md",
+  "riskLevel": "low",
+  "automationPolicy": "documentation-and-schema-only; no file mutation logic"
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "pccos.classified-input.v1",
+  "generatedAt": "2026-06-02T04:07:00+07:00",
+  "items": [
+    {
+      "type": "idea",
+      "files": ["README.md", "context.md", "agent.md"]
+    },
+    {
+      "type": "requirement",
+      "files": ["project-type-candidates.md", "auto-detect-policy.md"]
+    },
+    {
+      "type": "decision",
+      "files": ["agent.md", "policy-runtime.json", "approval-rules.json"]
+    },
+    {
+      "type": "evidence",
+      "files": ["context-pack-manifest.json", "verification-report.json", "context-foundation-flow.json"]
+    }
+  ]
+}

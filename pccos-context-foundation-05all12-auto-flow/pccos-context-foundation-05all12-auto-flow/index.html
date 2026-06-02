@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="th" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PCCOS Context Foundation Auto Flow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={darkMode:"class",theme:{extend:{colors:{ink:"#05020b",violetGlow:"#c4a7ff"}}}};</script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="min-h-screen bg-ink text-slate-100">
+  <main class="mx-auto max-w-6xl px-4 py-8">
+    <header class="glass rounded-[2rem] p-6">
+      <p class="inline-flex rounded-full border border-violetGlow/25 bg-white/[.055] px-4 py-2 text-sm text-violet-100">PCCOS · Context Foundation Auto Flow</p>
+      <h1 class="mt-5 text-3xl font-black md:text-5xl">Context Foundation - 05ALL12</h1>
+      <p class="mt-4 max-w-3xl leading-8 text-slate-300">สร้างทุกขั้น 05012-05512 อัตโนมัติ ไม่ต้องเลือก Project Type หรือเลือกไฟล์ทีละรายการ</p>
+    </header>
+    <section class="mt-6 grid gap-4 md:grid-cols-2">
+      <div class="glass rounded-3xl p-5"><h2 class="text-xl font-black">Included Flow</h2><div id="flow"></div></div>
+      <div class="glass rounded-3xl p-5"><h2 class="text-xl font-black">Updated Files</h2><div id="files"></div></div>
+    </section>
+    <button id="download" class="mt-6 rounded-2xl bg-violet-500 px-5 py-3 font-black text-white hover:bg-violet-400">Download Generated Context Pack ZIP</button>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>

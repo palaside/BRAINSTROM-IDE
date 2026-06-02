@@ -1,0 +1,13 @@
+{
+  "schemaVersion": "pccos.file-health.v1",
+  "generatedAt": "2026-06-02T04:10:00+07:00",
+  "checks": {
+    "allContextFilesPresent": true,
+    "missingFiles": [],
+    "unexpectedFiles": [],
+    "manifestValid": true,
+    "policyFilesPresent": true,
+    "approvalFilesPresent": true
+  },
+  "notes": "All expected context foundation files (17) are present and accounted for. No missing or stray files detected."
+}

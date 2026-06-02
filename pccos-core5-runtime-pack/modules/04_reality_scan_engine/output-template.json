@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "pccos.core5-output.v1",
+  "module": "Reality Scan Engine",
+  "generatedAt": "{{generatedAt}}",
+  "summary": "",
+  "inputs": [
+    "file tree",
+    "arena-project.json",
+    "package.json",
+    "PROJECT_GENOME.md",
+    "project-genome.json"
+  ],
+  "outputs": [
+    "REALITY_SCAN.md",
+    "reality-scan.json",
+    "file-health-report.json"
+  ],
+  "risks": [],
+  "nextActions": [],
+  "confidence": 0
+}

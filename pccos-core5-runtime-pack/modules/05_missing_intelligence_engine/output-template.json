@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "pccos.core5-output.v1",
+  "module": "Missing Intelligence Engine",
+  "generatedAt": "{{generatedAt}}",
+  "summary": "",
+  "inputs": [
+    "REALITY_SCAN.md",
+    "reality-scan.json",
+    "project-genome.json",
+    "project-type-candidates.md",
+    "PROJECT_STANDARD.md"
+  ],
+  "outputs": [
+    "MISSING_INTELLIGENCE.md",
+    "missing-intelligence.json",
+    "NEXT_BATCH_PLAN.md"
+  ],
+  "risks": [],
+  "nextActions": [],
+  "confidence": 0
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": "pccos.context-foundation.auto-flow.v1",
+  "projectName": "Context Foundation - 05ALL12",
+  "generatedAt": "2026-06-01T19:09:42.760187+00:00",
+  "flowRange": "05012-05512",
+  "phase": 0,
+  "coreModuleCount": 5,
+  "projectContextPackFiles": 12,
+  "projectTypeMode": "candidate-only",
+  "finalProjectType": "pending-analysis",
+  "projectTypeCandidates": [
+    "website",
+    "webapp",
+    "spa",
+    "electron",
+    "python-cli",
+    "documentation-system"
+  ],
+  "flowSteps": [
+    {
+      "code": "05012",
+      "name": "Context Foundation Base",
+      "role": "สร้างฐานกลางของ Context Foundation โดยยังไม่ล็อก Project Type",
+      "status": "updated"
+    },
+    {
+      "code": "05112",
+      "name": "Project Name Resolver",
+      "role": "กำหนดชื่อโปรเจกต์แบบอ่านรหัสได้และใช้เป็นชื่อ output",
+      "status": "updated"
+    },
+    {
+      "code": "05212",
+      "name": "Project Type Candidate Pack",
+      "role": "ใส่ Project Type ทั้ง 6 แบบไว้ก่อน ยังไม่ล็อก final type",
+      "status": "updated"
+    },
+    {
+      "code": "05312",
+      "name": "Context File Selection Pack",
+      "role": "สร้างไฟล์บริบทหลักทั้ง 12 ไฟล์แบบ auto-selected",
+      "status": "updated"
+    },
+    {
+      "code": "05412",
+      "name": "Auto Detect Source Reader",
+      "role": "เตรียมกติกาให้ AI อ่าน README/package/manifest/file tree",
+      "status": "updated"
+    },
+    {
+      "code": "05512",
+      "name": "Context Pack Manifest Builder",
+      "role": "สร้าง manifest กลางและ verification output",
+      "status": "updated"
+    }
+  ],
+  "files": [
+    {
+      "name": "README.md",
+      "status": "updated"
+    },
+    {
+      "name": "agent.md",
+      "status": "updated"
+    },
+    {
+      "name": "context.md",
+      "status": "updated"
+    },
+    {
+      "name": "project-type-candidates.md",
+      "status": "updated"
+    },
+    {
+      "name": "claude.md",
+      "status": "updated"
+    },
+    {
+      "name": "GitHub Copilot Instructions.md",
+      "status": "updated"
+    },
+    {
+      "name": "architecture.md",
+      "status": "updated"
+    },
+    {
+      "name": "security.md",
+      "status": "updated"
+    },
+    {
+      "name": "testing.md",
+      "status": "updated"
+    },
+    {
+      "name": "tasks.md",
+      "status": "updated"
+    },
+    {
+      "name": "roadmap.md",
+      "status": "updated"
+    },
+    {
+      "name": "api.md",
+      "status": "updated"
+    },
+    {
+      "name": "changelog.md",
+      "status": "updated"
+    },
+    {
+      "name": "auto-detect-policy.md",
+      "status": "updated"
+    }
+  ]
+}

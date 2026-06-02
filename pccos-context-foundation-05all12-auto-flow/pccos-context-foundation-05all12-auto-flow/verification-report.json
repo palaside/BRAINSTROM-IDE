@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "pccos.context-foundation.verification.v1",
+  "verifiedAt": "2026-06-01T19:09:42.760353+00:00",
+  "checks": [
+    {
+      "name": "05012-05512 included",
+      "passed": true
+    },
+    {
+      "name": "all 6 project type candidates included",
+      "passed": true
+    },
+    {
+      "name": "12 core context files included",
+      "passed": true
+    },
+    {
+      "name": "final project type pending-analysis",
+      "passed": true
+    }
+  ]
+}

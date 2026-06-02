@@ -1,0 +1,82 @@
+{
+  "schemaVersion": "pccos.context-pack.v2",
+  "projectName": "Context Foundation - 05112",
+  "projectTypeMode": "candidate-only",
+  "finalProjectType": "pending-analysis",
+  "projectTypeCandidates": [
+    "website",
+    "webapp",
+    "spa",
+    "electron",
+    "python-cli",
+    "documentation-system"
+  ],
+  "generatedAt": "2026-06-01T18:59:42.037Z",
+  "files": [
+    {
+      "name": "README.md",
+      "status": "updated",
+      "description": "ภาพรวมโปรเจกต์ Stack วิธีรัน และสถานะ"
+    },
+    {
+      "name": "agent.md",
+      "status": "updated",
+      "description": "กติกาและคู่มือการทำงานของ AI Agent"
+    },
+    {
+      "name": "context.md",
+      "status": "updated",
+      "description": "บริบทเชิงลึก เหตุผล ข้อจำกัด และ decision"
+    },
+    {
+      "name": "claude.md",
+      "status": "updated",
+      "description": "หน่วยความจำและคำสั่งเฉพาะสำหรับ Claude Code"
+    },
+    {
+      "name": "GitHub Copilot Instructions.md",
+      "status": "updated",
+      "description": "คำแนะนำสำหรับ GitHub Copilot"
+    },
+    {
+      "name": "architecture.md",
+      "status": "updated",
+      "description": "โครงสร้างระบบและ data flow"
+    },
+    {
+      "name": "security.md",
+      "status": "updated",
+      "description": "นโยบายความปลอดภัยและข้อห้าม"
+    },
+    {
+      "name": "testing.md",
+      "status": "updated",
+      "description": "วิธีตรวจงาน คำสั่ง test และ checklist"
+    },
+    {
+      "name": "tasks.md",
+      "status": "updated",
+      "description": "รายการงานปัจจุบันและ blocker"
+    },
+    {
+      "name": "roadmap.md",
+      "status": "updated",
+      "description": "แผนระยะยาวและ milestone"
+    },
+    {
+      "name": "api.md",
+      "status": "updated",
+      "description": "รายละเอียด API endpoints และ data model"
+    },
+    {
+      "name": "changelog.md",
+      "status": "updated",
+      "description": "บันทึกการเปลี่ยนแปลง"
+    },
+    {
+      "name": "project-type-candidates.md",
+      "status": "updated",
+      "description": "เก็บ Project Type ทั้ง 6 แบบแบบ candidate-only"
+    }
+  ]
+}

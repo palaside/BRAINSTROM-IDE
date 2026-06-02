@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "pccos.missing-intelligence.v1",
+  "generatedAt": "2026-06-02T04:11:00+07:00",
+  "missingArtifacts": [
+    {"category": "Source Code", "description": "No src/ directory or any .js/.ts files", "reason": "Context Foundation pack; implementation deferred"},
+    {"category": "Package Manifest", "description": "No package.json", "reason": "Not required at this stage; will be added in implementation phase"},
+    {"category": "Build Artifacts", "description": "No build/ directory or compiled bundles", "reason": "No build process defined yet"},
+    {"category": "Runtime Configuration", "description": "No runtime-config.json or environment files", "reason": "To be defined after final project type is approved"},
+    {"category": "Testing Suite", "description": "No unit/integration test files", "reason": "Tests will be added post‑design approval"}
+  ],
+  "actionItems": [
+    "Review project-type candidates and approve a final type",
+    "Define implementation scope based on approved type",
+    "Create src/ directory with initial entry points",
+    "Generate package.json reflecting chosen runtime and dependencies",
+    "Configure build tool (e.g., Vite, Webpack) appropriate for the project type"
+  ]
+}

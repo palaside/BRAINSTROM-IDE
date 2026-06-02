@@ -1,0 +1,103 @@
+{
+  "tests": [
+    {
+      "id": "TS001",
+      "description": "Syntax check of all JavaScript runtime files",
+      "command": "node",
+      "args": ["--check"],
+      "dynamicFiles": true,
+      "expectedExitCode": 0,
+      "type": "syntaxAll"
+    },
+    {
+      "id": "TS002",
+      "description": "Dry‑run verification via CLI",
+      "command": "node",
+      "args": ["cli/cli.js", "dry-run"],
+      "expectedExitCode": 0,
+      "expectedFiles": ["orchestrator/runtime-report.json"],
+      "type": "sideEffect"
+    },
+    {
+      "id": "TS003",
+      "description": "Orchestrator verification via CLI",
+      "command": "node",
+      "args": ["cli/cli.js", "orchestrate"],
+      "expectedExitCode": 0,
+      "expectedFiles": ["orchestrator/runtime-report.json"],
+      "type": "sideEffect"
+    },
+    {
+      "id": "TS004",
+      "description": "CLI status command",
+      "command": "node",
+      "args": ["cli/cli.js", "status"],
+      "expectedExitCode": 0,
+      "type": "simple"
+    },
+    {
+      "id": "TS005",
+      "description": "CLI verify command",
+      "command": "node",
+      "args": ["cli/cli.js", "verify"],
+      "expectedExitCode": 0,
+      "type": "simple"
+    },
+    {
+      "id": "TS006",
+      "description": "CLI report command",
+      "command": "node",
+      "args": ["cli/cli.js", "report"],
+      "expectedExitCode": 0,
+      "expectedFiles": ["cli/CLI_REPORT.md"],
+      "type": "sideEffect"
+    },
+    {
+      "id": "TS007",
+      "description": "Invariant check on runtime-report.json",
+      "command": "node",
+      "args": [],
+      "type": "invariant",
+      "expectedValues": {
+        "projectName": "Context Foundation - 05ALL12",
+        "projectTypeMode": "candidate-only",
+        "finalProjectType": "pending-analysis"
+      }
+    },
+    {
+      "id": "TS008",
+      "description": "Prohibited artifact check (no src/, package.json, build/, dist/)",
+      "command": "node",
+      "args": [],
+      "type": "prohibitedCheck"
+    },
+    {
+      "id": "TS009",
+      "description": "Core 5 output artifacts unchanged",
+      "command": "node",
+      "args": [],
+      "type": "hashCheck",
+      "files": [
+        "modules/03_project_genome_engine/project-genome.json",
+        "modules/04_reality_scan_engine/reality-scan.json",
+        "modules/05_missing_intelligence_engine/missing-intelligence.json",
+        "modules/05_missing_intelligence_engine/NEXT_BATCH_PLAN.md"
+      ]
+    },
+    {
+      "id": "TS010",
+      "description": "Git safety – ensure no forbidden Git write commands were invoked",
+      "command": "node",
+      "args": [],
+      "type": "gitSafety"
+    },
+    {
+      "id": "TS011",
+      "description": "Negative syntax test – broken fixture should fail",
+      "command": "node",
+      "args": ["--check", "test/fixtures/broken.js"],
+      "expectedExitCode": 1,
+      "type": "negativeSyntax"
+    }
+  ]
+}

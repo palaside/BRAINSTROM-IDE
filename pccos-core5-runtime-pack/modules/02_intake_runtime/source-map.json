@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "pccos.source-map.v1",
+  "generatedAt": "2026-06-02T04:07:30+07:00",
+  "map": {
+    "README.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/README.md",
+    "agent.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/agent.md",
+    "context.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/context.md",
+    "claude.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/claude.md",
+    "GitHub Copilot Instructions.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/GitHub%20Copilot%20Instructions.md",
+    "architecture.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/architecture.md",
+    "security.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/security.md",
+    "testing.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/testing.md",
+    "tasks.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/tasks.md",
+    "roadmap.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/roadmap.md",
+    "api.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/api.md",
+    "changelog.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/changelog.md",
+    "project-type-candidates.md": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/project-type-candidates.md",
+    "auto-detect-policy.md": "d:/Project/PCCOS/pccos-context-foundation-05all12-auto-flow/pccos-context-foundation-05all12-auto-flow/auto-detect-policy.md",
+    "context-pack-manifest.json": "d:/Project/PCCOS/Context%20Foundation%20-%2005112-context-pack/context-pack-manifest.json",
+    "context-foundation-flow.json": "d:/Project/PCCOS/pccos-context-foundation-05all12-auto-flow/pccos-context-foundation-05all12-auto-flow/context-foundation-flow.json",
+    "verification-report.json": "d:/Project/PCCOS/pccos-context-foundation-05all12-auto-flow/pccos-context-foundation-05all12-auto-flow/verification-report.json"
+  }
+}

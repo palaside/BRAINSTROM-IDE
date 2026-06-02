@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "pccos.approval-rules.v1",
+  "generatedAt": "2026-06-02T04:06:20+07:00",
+  "approvals": [
+    {
+      "action": "lockProjectType",
+      "required": true,
+      "description": "User must explicitly approve any lock of the final project type"
+    },
+    {
+      "action": "modifyCoreFiles",
+      "required": true,
+      "description": "User approval required before modifying any core context or manifest files"
+    }
+  ]
+}

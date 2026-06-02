@@ -1,0 +1,23 @@
+{
+  "dataSources": [
+    "PHASE2_RUNTIME_STATUS.json",
+    "PHASE2B_ORCHESTRATOR_STATUS.json",
+    "PHASE2C_CLI_STATUS.json",
+    "PHASE2D_REGRESSION_GUARD_STATUS.json",
+    "orchestrator/runtime-report.json",
+    "cli/CLI_REPORT.md",
+    "test/test-report.md",
+    "modules/03_project_genome_engine/project-genome.json",
+    "modules/04_reality_scan_engine/reality-scan.json",
+    "modules/05_missing_intelligence_engine/missing-intelligence.json",
+    "modules/05_missing_intelligence_engine/NEXT_BATCH_PLAN.md"
+  ],
+  "availableCommands": [
+    "node cli/cli.js status",
+    "node cli/cli.js verify",
+    "node cli/cli.js dry-run",
+    "node cli/cli.js orchestrate",
+    "node cli/cli.js report",
+    "node test/harness.js"
+  ]
+}

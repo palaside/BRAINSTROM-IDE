@@ -1,0 +1,26 @@
+{
+  "modules": [
+    {
+      "name": "Doctrine & Policy Runtime",
+      "policyLoader": "../modules/01_doctrine_policy_runtime/policy-loader.js",
+      "approvalReader": "../modules/01_doctrine_policy_runtime/approval-reader.js"
+    },
+    {
+      "name": "Intake Runtime",
+      "sourceDetector": "../modules/02_intake_runtime/source-detector.js",
+      "classifiedInput": "../modules/02_intake_runtime/classified-input.json"
+    },
+    {
+      "name": "Project Genome Engine",
+      "genome": "../modules/03_project_genome_engine/project-genome.json"
+    },
+    {
+      "name": "Reality Scan Engine",
+      "realityScan": "../modules/04_reality_scan_engine/reality-scan.json"
+    },
+    {
+      "name": "Missing Intelligence Engine",
+      "missingIntelligence": "../modules/05_missing_intelligence_engine/missing-intelligence.json"
+    }
+  ]
+}

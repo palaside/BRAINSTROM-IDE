@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "modules": [
+    {
+      "name": "Doctrine & Policy Runtime",
+      "status": "passed",
+      "data": {
+        "policy": {
+          "schemaVersion": "pccos.policy-runtime.v1",
+          "generatedAt": "2026-06-02T04:06:12+07:00",
+          "prohibitions": [
+            "Do not lock Project Type before Reality Scan",
+            "Do not modify any project files before Missing Intelligence Engine provides a complete backlog"
+          ],
+          "requirements": [
+            "All policy decisions must be explicitly approved by the user"
+          ],
+          "safetyGuards": [
+            "High‑risk operations (e.g., changing Project Type, deleting core files) require human approval"
+          ]
+        },
+        "approvals": {
+          "schemaVersion": "pccos.approval-rules.v1",
+          "generatedAt": "2026-06-02T04:06:20+07:00",
+          "approvals": [
+            {
+              "action": "lockProjectType",
+              "required": true,
+              "description": "User must explicitly approve any lock of the final project type"
+            },
+            {
+              "action": "modifyCoreFiles",
+              "required": true,
+              "description": "User approval required before modifying any core context or manifest files"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Intake Runtime",
+      "status": "passed",
+      "data": {
+        "sourceResult": "context-only"
+      }
+    },
+    {
+      "name": "Project Genome Engine",
+      "status": "passed",
+      "data": {
+        "genome": {
+          "schemaVersion": "pccos.project-genome.v1",
+          "generatedAt": "2026-06-02T04:08:00+07:00",
+          "projectName": "Context Foundation - 05ALL12",
+          "status": "context-foundation-ready",
+          "projectTypeMode": "candidate-only",
+          "finalProjectType": "pending-analysis",
+          "candidates": [
+            {
+              "type": "Web Application",
+              "confidence": 0.35
+            },
+            {
+              "type": "Command-Line Tool",
+              "confidence": 0.2
+            },
+            {
+              "type": "Library / SDK",
+              "confidence": 0.15
+            },
+            {
+              "type": "Data Pipeline",
+              "confidence": 0.12
+            },
+            {
+              "type": "Machine-Learning Model",
+              "confidence": 0.1
+            },
+            {
+              "type": "Service / API",
+              "confidence": 0.08
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Reality Scan Engine",
+      "status": "passed",
+      "data": {
+        "reality": {
+          "schemaVersion": "pccos.reality-scan.v1",
+          "generatedAt": "2026-06-02T04:09:00+07:00",
+          "findings": {
+            "packageJson": false,
+            "srcDirectory": false,
+            "buildDirectory": false,
+            "contextFilesPresent": true,
+            "totalContextFiles": 17,
+            "notes": "Project is a Context Foundation pack with no runnable source code."
+          }
+        }
+      }
+    },
+    {
+      "name": "Missing Intelligence Engine",
+      "status": "passed",
+      "data": {
+        "missing": {
+          "schemaVersion": "pccos.missing-intelligence.v1",
+          "generatedAt": "2026-06-02T04:11:00+07:00",
+          "missingArtifacts": [
+            {
+              "category": "Source Code",
+              "description": "No src/ directory or any .js/.ts files",
+              "reason": "Context Foundation pack; implementation deferred"
+            },
+            {
+              "category": "Package Manifest",
+              "description": "No package.json",
+              "reason": "Not required at this stage; will be added in implementation phase"
+            },
+            {
+              "category": "Build Artifacts",
+              "description": "No build/ directory or compiled bundles",
+              "reason": "No build process defined yet"
+            },
+            {
+              "category": "Runtime Configuration",
+              "description": "No runtime-config.json or environment files",
+              "reason": "To be defined after final project type is approved"
+            },
+            {
+              "category": "Testing Suite",
+              "description": "No unit/integration test files",
+              "reason": "Tests will be added post‑design approval"
+            }
+          ],
+          "actionItems": [
+            "Review project-type candidates and approve a final type",
+            "Define implementation scope based on approved type",
+            "Create src/ directory with initial entry points",
+            "Generate package.json reflecting chosen runtime and dependencies",
+            "Configure build tool (e.g., Vite, Webpack) appropriate for the project type"
+          ]
+        }
+      }
+    }
+  ],
+  "summary": {
+    "projectName": "Context Foundation - 05ALL12",
+    "projectTypeMode": "candidate-only",
+    "finalProjectType": "pending-analysis",
+    "sourceResult": "context-only",
+    "hasSrcDir": false,
+    "hasPackageJson": false,
+    "hasBuildDir": false,
+    "hasDistDir": false
+  }
+}

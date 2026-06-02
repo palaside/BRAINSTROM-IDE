@@ -1,0 +1,98 @@
+/* dashboard/styles.css */
+:root {
+  --bg-main: hsl(220, 15%, 12%);
+  --bg-card: hsl(220, 15%, 18%);
+  --primary: hsl(210, 90%, 55%);
+  --accent: hsl(340, 80%, 58%);
+  --text-primary: hsl(0, 0%, 90%);
+  --text-secondary: hsl(0, 0%, 70%);
+  --border-radius: 0.6rem;
+  --transition: 0.25s ease;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-main: hsl(210, 20%, 96%);
+    --bg-card: hsl(210, 20%, 100%);
+    --text-primary: hsl(0, 0%, 10%);
+    --text-secondary: hsl(0, 0%, 40%);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header, footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  margin-bottom: 0.3rem;
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+main {
+  flex: 1;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.status-pass {
+  color: hsl(120, 70%, 50%);
+}
+.status-fail {
+  color: var(--accent);
+}
+
+ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin: 0.3rem 0;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+pre {
+  background: rgba(0,0,0,0.05);
+  padding: 0.8rem;
+  border-radius: var(--border-radius);
+  overflow-x: auto;
+}

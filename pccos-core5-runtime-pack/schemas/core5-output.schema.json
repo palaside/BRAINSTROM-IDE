@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pccos.core5-output.schema.json",
+  "title": "PCCOS Core 5 Output",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "module",
+    "generatedAt",
+    "summary",
+    "inputs",
+    "outputs",
+    "risks",
+    "nextActions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nextActions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "number"
+    }
+  }
+}

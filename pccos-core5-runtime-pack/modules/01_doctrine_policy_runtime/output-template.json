@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "pccos.core5-output.v1",
+  "module": "Doctrine & Policy Runtime",
+  "generatedAt": "{{generatedAt}}",
+  "summary": "",
+  "inputs": [
+    "USER.md",
+    "AGENTS.md",
+    "START_HERE_TH.md",
+    "context.md",
+    "agent.md"
+  ],
+  "outputs": [
+    "DOCTRINE_REPORT.md",
+    "policy-runtime.json",
+    "approval-rules.json"
+  ],
+  "risks": [],
+  "nextActions": [],
+  "confidence": 0
+}

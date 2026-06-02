@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "phase": "Phase 2E – Runtime Status Dashboard / Health Summary",
+  "projectName": "Context Foundation - 05ALL12",
+  "projectTypeMode": "candidate-only",
+  "finalProjectType": "pending-analysis",
+  "dashboardPath": "dashboard/index.html",
+  "healthSummaryPath": "dashboard/health-summary.md",
+  "prohibitedArtifacts": {
+    "src": false,
+    "packageJson": false,
+    "build": false,
+    "dist": false
+  }
+}

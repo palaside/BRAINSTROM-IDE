@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "nodeCheck": "passed",
+  "dryRun": {
+    "exitCode": 0,
+    "script": "run-core5-runtime-dry.js"
+  },
+  "projectName": "Context Foundation - 05ALL12",
+  "projectTypeMode": "candidate-only",
+  "finalProjectType": "pending-analysis",
+  "missingArtifacts": {
+    "src": false,
+    "packageJson": false,
+    "build": false,
+    "dist": false
+  },
+  "nextBatchPlan": {
+    "tokenCheck": true
+  }
+}

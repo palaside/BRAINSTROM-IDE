@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "pccos.project-genome.v1",
+  "generatedAt": "2026-06-02T04:08:00+07:00",
+  "projectName": "Context Foundation - 05ALL12",
+  "status": "context-foundation-ready",
+  "projectTypeMode": "candidate-only",
+  "finalProjectType": "pending-analysis",
+  "candidates": [
+    {"type": "Web Application", "confidence": 0.35},
+    {"type": "Command-Line Tool", "confidence": 0.20},
+    {"type": "Library / SDK", "confidence": 0.15},
+    {"type": "Data Pipeline", "confidence": 0.12},
+    {"type": "Machine-Learning Model", "confidence": 0.10},
+    {"type": "Service / API", "confidence": 0.08}
+  ]
+}

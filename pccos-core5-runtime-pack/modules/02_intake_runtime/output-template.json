@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "pccos.core5-output.v1",
+  "module": "Intake Runtime",
+  "generatedAt": "{{generatedAt}}",
+  "summary": "",
+  "inputs": [
+    "README.md",
+    "context.md",
+    "agent.md",
+    "arena-project.json",
+    "package.json",
+    "raw-chat.txt",
+    "prompt.md",
+    "folder tree"
+  ],
+  "outputs": [
+    "INTAKE_REPORT.md",
+    "classified-input.json",
+    "source-map.json",
+    "raw-input-index.json"
+  ],
+  "risks": [],
+  "nextActions": [],
+  "confidence": 0
+}

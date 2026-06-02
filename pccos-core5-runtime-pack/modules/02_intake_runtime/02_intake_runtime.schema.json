@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pccos.02_intake_runtime.schema.json",
+  "title": "Intake Runtime",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "module",
+    "generatedAt",
+    "summary",
+    "inputs",
+    "outputs",
+    "risks",
+    "nextActions"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "module": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "nextActions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  }
+}

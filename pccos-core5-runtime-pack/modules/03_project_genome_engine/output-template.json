@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "pccos.core5-output.v1",
+  "module": "Project Genome Engine",
+  "generatedAt": "{{generatedAt}}",
+  "summary": "",
+  "inputs": [
+    "classified-input.json",
+    "source-map.json",
+    "README.md",
+    "context.md",
+    "package.json",
+    "arena-project.json"
+  ],
+  "outputs": [
+    "PROJECT_GENOME.md",
+    "project-genome.json",
+    "project-type-analysis.md"
+  ],
+  "risks": [],
+  "nextActions": [],
+  "confidence": 0
+}

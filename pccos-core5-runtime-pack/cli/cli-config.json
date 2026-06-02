@@ -1,0 +1,9 @@
+{
+  "commands": [
+    "status",
+    "verify",
+    "dry-run",
+    "orchestrate",
+    "report"
+  ]
+}

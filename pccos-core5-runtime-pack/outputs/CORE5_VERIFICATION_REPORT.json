@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "pccos.core5-verification.v1",
+  "verifiedAt": "2026-06-01T19:22:13.744058+00:00",
+  "checks": [
+    {
+      "name": "root README exists",
+      "passed": true
+    },
+    {
+      "name": "manifest exists",
+      "passed": true
+    },
+    {
+      "name": "5 module folders exist",
+      "passed": true
+    },
+    {
+      "name": "each module has README",
+      "passed": true
+    },
+    {
+      "name": "each module has schema",
+      "passed": true
+    },
+    {
+      "name": "each module has flow",
+      "passed": true
+    },
+    {
+      "name": "each module has output template",
+      "passed": true
+    }
+  ],
+  "fileCount": 26,
+  "files": [
+    "README.md",
+    "core5-runtime-manifest.json",
+    "modules/01_doctrine_policy_runtime/01_doctrine_policy_runtime.schema.json",
+    "modules/01_doctrine_policy_runtime/README.md",
+    "modules/01_doctrine_policy_runtime/flow.md",
+    "modules/01_doctrine_policy_runtime/output-template.json",
+    "modules/02_intake_runtime/02_intake_runtime.schema.json",
+    "modules/02_intake_runtime/README.md",
+    "modules/02_intake_runtime/flow.md",
+    "modules/02_intake_runtime/output-template.json",
+    "modules/03_project_genome_engine/03_project_genome_engine.schema.json",
+    "modules/03_project_genome_engine/README.md",
+    "modules/03_project_genome_engine/flow.md",
+    "modules/03_project_genome_engine/output-template.json",
+    "modules/04_reality_scan_engine/04_reality_scan_engine.schema.json",
+    "modules/04_reality_scan_engine/README.md",
+    "modules/04_reality_scan_engine/flow.md",
+    "modules/04_reality_scan_engine/output-template.json",
+    "modules/05_missing_intelligence_engine/05_missing_intelligence_engine.schema.json",
+    "modules/05_missing_intelligence_engine/README.md",
+    "modules/05_missing_intelligence_engine/flow.md",
+    "modules/05_missing_intelligence_engine/output-template.json",
+    "schemas/core5-output.schema.json",
+    "templates/CORE5_ANALYSIS_REPORT.template.md",
+    "templates/NEXT_BATCH_PLAN.template.md",
+    "workflows/core5-analysis-flow.md"
+  ]
+}

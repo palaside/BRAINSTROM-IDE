@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "pccos.policy-runtime.v1",
+  "generatedAt": "2026-06-02T04:06:12+07:00",
+  "prohibitions": [
+    "Do not lock Project Type before Reality Scan",
+    "Do not modify any project files before Missing Intelligence Engine provides a complete backlog"
+  ],
+  "requirements": [
+    "All policy decisions must be explicitly approved by the user"
+  ],
+  "safetyGuards": [
+    "High‑risk operations (e.g., changing Project Type, deleting core files) require human approval"
+  ]
+}
