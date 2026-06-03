@@ -1,11 +1,10 @@
-import { ActivityFeed } from "@/components/activity-feed";
 import { CivilizationCore } from "@/components/civilization-core";
 import { MissionCommand } from "@/components/mission-command";
 import { OperationalPanels } from "@/components/operational-panels";
-import { Sidebar } from "@/components/sidebar";
-import { Topbar } from "@/components/topbar";
 import { RuntimeMatrix } from "@/components/runtime-matrix";
 import { RuntimeTimeline } from "@/components/runtime-timeline";
+import { Sidebar } from "@/components/sidebar";
+import { Topbar } from "@/components/topbar";
 
 export default function HomePage() {
   return (
@@ -24,10 +23,9 @@ export default function HomePage() {
               <RuntimeTimeline />
             </section>
 
-            <section className="grid gap-6 xl:grid-cols-3">
+            <section className="grid gap-6 xl:grid-cols-2">
               <RuntimeMatrix />
               <OperationalPanels />
-              <ActivityFeed />
             </section>
           </div>
         </section>
