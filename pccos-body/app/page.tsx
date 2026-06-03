@@ -4,6 +4,8 @@ import { MissionCommand } from "@/components/mission-command";
 import { OperationalPanels } from "@/components/operational-panels";
 import { Sidebar } from "@/components/sidebar";
 import { Topbar } from "@/components/topbar";
+import { RuntimeMatrix } from "@/components/runtime-matrix";
+import { RuntimeTimeline } from "@/components/runtime-timeline";
 
 export default function HomePage() {
   return (
@@ -19,11 +21,13 @@ export default function HomePage() {
 
             <section className="grid gap-6 xl:grid-cols-3">
               <MissionCommand />
-              <ActivityFeed />
+              <RuntimeTimeline />
             </section>
 
-            <section className="grid gap-6 xl:grid-cols-2">
+            <section className="grid gap-6 xl:grid-cols-3">
+              <RuntimeMatrix />
               <OperationalPanels />
+              <ActivityFeed />
             </section>
           </div>
         </section>
