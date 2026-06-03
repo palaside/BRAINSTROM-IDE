@@ -1,4 +1,5 @@
 import { CivilizationCore } from "@/components/civilization-core";
+import { CommandConsole } from "@/components/command-console";
 import { MissionCommand } from "@/components/mission-command";
 import { OperationalPanels } from "@/components/operational-panels";
 import { RuntimeMatrix } from "@/components/runtime-matrix";
@@ -26,6 +27,10 @@ export default function HomePage() {
             <section className="grid gap-6 xl:grid-cols-2">
               <RuntimeMatrix />
               <OperationalPanels />
+            </section>
+
+            <section>
+              <CommandConsole />
             </section>
           </div>
         </section>
