@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { PCCOSRuntimeProvider } from "@/components/pccos-runtime-provider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -20,7 +21,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "PCCOS Command Center",
-  description: "Personal Cognitive Civilization Operating System Body v0.1",
+  description: "Personal Cognitive Civilization Operating System Body v1.0",
 };
 
 export default function RootLayout({
@@ -38,7 +39,7 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
-        {children}
+        <PCCOSRuntimeProvider>{children}</PCCOSRuntimeProvider>
       </body>
     </html>
   );
